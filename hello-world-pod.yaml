@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-world-pod
+spec:
+  containers:
+    - name: hello-world-container
+      image: hello-world-web-server
+      imagePullPolicy: Never
+      resources:
+        limits:
+          cpu: "0.5"  # Limita de CPU în jumătate de core
+          memory: "256Mi"  # Limita de memorie la 256 MiB
+        requests:
+          cpu: "0.25"  # Cerere de CPU la 0.25 de core
+          memory: "128Mi"  # Cerere de memorie la 128 MiB
