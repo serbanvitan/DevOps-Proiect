@@ -5,10 +5,6 @@ Docker Image:
 
 A Docker image is created for the "Hello World" web server using the lightweight Nginx server with the Alpine Linux base. Alpine Linux is chosen for its minimal size, contributing to efficient resource usage and quicker download times.
 
-Kubernetes Deployment:
-
-A Kubernetes Deployment is defined in the hello-world-deployment.yaml file. This deployment ensures the desired number of replicas of the "Hello World" pod are running. The pod uses the Docker image created earlier.
-
 Kubernetes Service:
 
 A Kubernetes Service (hello-world-service) is defined in the hello-world-service.yaml file. This service exposes the deployed pods, allowing them to be accessed within the Kubernetes cluster.
